@@ -1,9 +1,9 @@
 <tr id="<%= dom_id invoice %>">
-  <td><%= invoice.customer.name %></td>
-  <td><%= invoice.customer.address.street %></td>
-  <td><%= invoice.customer.address.city %></td>
-  <td><%= invoice.customer.address.state %></td>
-  <td><%= invoice.customer.address.zip_code %></td>
+  <td><%= invoice.customer_name %></td>
+  <td><%= invoice.customer_street %></td>
+  <td><%= invoice.customer_city %></td>
+  <td><%= invoice.customer_state %></td>
+  <td><%= invoice.customer_zip_code %></td>
   <td class="d-flex justify-content-center">
     <%= link_to invoice do %>
     <i class="bi bi-eye-fill"></i>

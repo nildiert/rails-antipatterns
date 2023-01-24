@@ -18,5 +18,22 @@
 #
 class Customer < ApplicationRecord
   has_one :address
-  has_many :invoices
+  has_many :invoices  
+
+  def street
+    address.street
+  end
+
+  def city
+    address.city
+  end
+
+  def state
+    address.state
+  end
+
+  def zip_code
+    address.zip_code
+  end
+
 end

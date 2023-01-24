@@ -18,4 +18,26 @@
 #
 class Invoice < ApplicationRecord
   belongs_to :customer
+
+
+  def customer_name
+    customer.name
+  end
+
+  def customer_street
+    customer.street
+  end
+
+  def customer_city
+    customer.city
+  end
+
+  def customer_state
+    customer.state
+  end
+
+  def customer_zip_code
+    customer.zip_code
+  end
+
 end
