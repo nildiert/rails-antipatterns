@@ -1,7 +1,12 @@
-<div id="<%= dom_id invoice %>">
-  <p>
-    <strong>Customer:</strong>
-    <%= invoice.customer_id %>
-  </p>
-
-</div>
+<tr id="<%= dom_id invoice %>">
+  <td><%= invoice.customer.name %></td>
+  <td><%= invoice.customer.address.street %></td>
+  <td><%= invoice.customer.address.city %></td>
+  <td><%= invoice.customer.address.state %></td>
+  <td><%= invoice.customer.address.zip_code %></td>
+  <td class="d-flex justify-content-center">
+    <%= link_to invoice do %>
+    <i class="bi bi-eye-fill"></i>
+    <% end %>
+  </td>
+</tr>
